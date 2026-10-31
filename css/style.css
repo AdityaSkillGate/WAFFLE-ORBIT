@@ -1,0 +1,678 @@
+/* ==========================================================================
+   WAFFLE ORBIT — Luxury Food Brand Design System
+   Designed & Developed by Aditya Skill Gate IT Solution | Sankarankovil
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --color-bg-dark: #0B0604;
+  --color-bg-surface: #140B07;
+  --color-bg-card: #170E09;
+  --color-bg-card-hover: #22140C;
+  --color-border-subtle: #2C180E;
+  --color-border-gold: rgba(245, 166, 35, 0.4);
+
+  --color-gold: #F5A623;
+  --color-gold-light: #FFC043;
+  --color-gold-warm: #E68A00;
+  --color-red: #D91D24;
+  --color-red-hover: #B8141A;
+  --color-cream: #FFFDF9;
+  --color-muted: #D1C2B5;
+
+  --font-display: 'Cinzel', serif;
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  background-color: var(--color-bg-dark);
+  color: var(--color-cream);
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-cream);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0604;
+}
+::-webkit-scrollbar-thumb {
+  background: #2C180E;
+  border-radius: 4px;
+  border: 1px solid rgba(245, 166, 35, 0.25);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5A623;
+}
+
+/* Fonts */
+.font-display {
+  font-family: var(--font-display);
+}
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+/* Background Atmosphere */
+.cosmic-radial-bg {
+  background: radial-gradient(circle at 50% 20%, rgba(245, 166, 35, 0.15) 0%, rgba(217, 29, 36, 0.08) 40%, transparent 75%);
+}
+
+.waffle-mesh-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(245, 166, 35, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 166, 35, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Glassmorphism Panels */
+.glass-panel {
+  background: rgba(23, 14, 9, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(245, 166, 35, 0.25);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.7);
+}
+
+.glass-nav {
+  background: rgba(13, 7, 4, 0.94);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(245, 166, 35, 0.22);
+}
+
+/* Glowing Gold Box */
+.gold-glow-box {
+  box-shadow: 0 0 35px -5px rgba(245, 166, 35, 0.35), 0 20px 40px -10px rgba(0, 0, 0, 0.8);
+}
+
+/* Luxury Gold & Red Buttons */
+.btn-gold-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.85rem;
+  border-radius: 9999px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #110804;
+  background: linear-gradient(135deg, #FFE27A 0%, #F5A623 50%, #D48806 100%);
+  box-shadow: 0 8px 24px -4px rgba(245, 166, 35, 0.5);
+  border: 1px solid #FFF0B3;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-gold-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 32px -4px rgba(245, 166, 35, 0.7);
+  filter: brightness(1.08);
+}
+
+.btn-red-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #FFFDF9;
+  background: rgba(217, 29, 36, 0.18);
+  border: 1.5px solid rgba(217, 29, 36, 0.7);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-red-outline:hover {
+  background: #D91D24;
+  border-color: #D91D24;
+  box-shadow: 0 8px 25px -4px rgba(217, 29, 36, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp-glow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #25D366 0%, #1DA851 100%);
+  box-shadow: 0 8px 24px -4px rgba(37, 211, 102, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-whatsapp-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -4px rgba(37, 211, 102, 0.65);
+}
+
+/* Social Media Button Icons (Full Size) */
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #FFFDF9;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.social-icon-btn svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: currentColor;
+  transition: transform 0.2s ease;
+}
+.social-icon-btn:hover svg {
+  transform: scale(1.15);
+}
+.social-icon-btn.youtube:hover {
+  background: #FF0000;
+  border-color: #FF0000;
+  color: #FFFFFF;
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+}
+.social-icon-btn.whatsapp:hover {
+  background: #25D366;
+  border-color: #25D366;
+  color: #FFFFFF;
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
+}
+.social-icon-btn.facebook:hover {
+  background: #1877F2;
+  border-color: #1877F2;
+  color: #FFFFFF;
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 8px 20px rgba(24, 119, 242, 0.5);
+}
+.social-icon-btn.instagram:hover {
+  background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+  border-color: transparent;
+  color: #FFFFFF;
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 8px 20px rgba(221, 42, 123, 0.5);
+}
+.social-icon-btn.location:hover {
+  background: #F5A623;
+  border-color: #F5A623;
+  color: #110804;
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 8px 20px rgba(245, 166, 35, 0.5);
+}
+
+/* Compact Social Media Icons (Top Bar & Mobile) */
+.social-icon-btn-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.95rem;
+  height: 1.95rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #E2E8F0;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.social-icon-btn-sm svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  transition: transform 0.2s ease;
+}
+.social-icon-btn-sm:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+.social-icon-btn-sm.instagram:hover {
+  background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF);
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(221, 42, 123, 0.5);
+}
+.social-icon-btn-sm.whatsapp:hover {
+  background: #25D366;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.5);
+}
+.social-icon-btn-sm.facebook:hover {
+  background: #1877F2;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.5);
+}
+.social-icon-btn-sm.youtube:hover {
+  background: #FF0000;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.5);
+}
+.social-icon-btn-sm.location:hover {
+  background: #F5A623;
+  color: #110804;
+  box-shadow: 0 4px 12px rgba(245, 166, 35, 0.5);
+}
+
+/* Social Media Pill Badges (SVGs with Text Label) */
+.social-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.15rem;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #FFFDF9;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+.social-badge svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+.social-badge.instagram {
+  background: linear-gradient(45deg, rgba(245, 133, 41, 0.2), rgba(221, 42, 123, 0.2), rgba(129, 52, 175, 0.2));
+  border-color: rgba(221, 42, 123, 0.5);
+  color: #FFB3D9;
+}
+.social-badge.instagram:hover {
+  background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(221, 42, 123, 0.5);
+}
+
+.social-badge.whatsapp {
+  background: rgba(37, 211, 102, 0.15);
+  border-color: rgba(37, 211, 102, 0.5);
+  color: #6EE7B7;
+}
+.social-badge.whatsapp:hover {
+  background: #25D366;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
+}
+
+.social-badge.facebook {
+  background: rgba(24, 119, 242, 0.15);
+  border-color: rgba(24, 119, 242, 0.5);
+  color: #93C5FD;
+}
+.social-badge.facebook:hover {
+  background: #1877F2;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(24, 119, 242, 0.5);
+}
+
+.social-badge.youtube {
+  background: rgba(255, 0, 0, 0.15);
+  border-color: rgba(255, 0, 0, 0.5);
+  color: #FCA5A5;
+}
+.social-badge.youtube:hover {
+  background: #FF0000;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+}
+
+.social-badge.location {
+  background: rgba(245, 166, 35, 0.15);
+  border-color: rgba(245, 166, 35, 0.5);
+  color: #FCD34D;
+}
+.social-badge.location:hover {
+  background: #F5A623;
+  color: #110804;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(245, 166, 35, 0.5);
+}
+
+/* Food Cards (Luxury Dark with Golden Hover Edges) */
+.luxury-food-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.luxury-food-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(245, 166, 35, 0.6);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px -5px rgba(245, 166, 35, 0.28);
+  background: var(--color-bg-card-hover);
+}
+
+/* Dietary Indicators */
+.veg-dot-box {
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 1.5px solid #10B981;
+  background: rgba(16, 185, 129, 0.2);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.veg-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: #10B981;
+}
+
+.non-veg-dot-box {
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 1.5px solid #EF4444;
+  background: rgba(239, 68, 68, 0.2);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.non-veg-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: #EF4444;
+}
+
+/* Badges */
+.badge-halal-luxury {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(245, 166, 35, 0.18);
+  color: #FFC043;
+  border: 1px solid rgba(245, 166, 35, 0.45);
+}
+
+.badge-signature-luxury {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, #EF4444 0%, #D91D24 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(217, 29, 36, 0.4);
+}
+
+/* Floating Animations for Hero Badges */
+@keyframes floatBadge1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+}
+@keyframes floatBadge2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(0deg);
+  }
+}
+.animate-float-1 {
+  animation: floatBadge1 4.5s ease-in-out infinite;
+}
+.animate-float-2 {
+  animation: floatBadge2 5.5s ease-in-out infinite;
+}
+
+/* Gold Text Gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF0B3 0%, #FFC043 50%, #E68A00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Category Filter Tab Active State */
+.cat-btn.active {
+  background: linear-gradient(135deg, #F5A623 0%, #D48806 100%);
+  color: #120A06;
+  border-color: #FFE082;
+  box-shadow: 0 6px 20px -2px rgba(245, 166, 35, 0.45);
+}
+
+/* Slide-Over Drawer Transitions */
+.drawer-backdrop {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer-panel {
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.drawer-panel.open {
+  transform: translateX(0%);
+}
+
+/* Modal Backdrop & Card */
+.modal-backdrop {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.modal-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-card {
+  transform: scale(0.95) translateY(20px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.modal-backdrop.open .modal-card {
+  transform: scale(1) translateY(0);
+}
+
+/* ==========================================================================
+   OFFICIAL SHOP MENU BOARD REPLICA (Exact 7-Column Layout from Store Board)
+   ========================================================================== */
+
+.official-board-frame {
+  background: radial-gradient(circle at 50% 15%, #1f1008 0%, #0d0603 65%, #050201 100%);
+  border: 4px solid #3d2212;
+  border-radius: 2rem;
+  box-shadow: 
+    0 0 0 2px #d48806, 
+    0 25px 60px -15px rgba(0, 0, 0, 0.9), 
+    inset 0 0 80px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(245, 166, 35, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.hanging-lamp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hanging-lamp::before {
+  content: '';
+  width: 2px;
+  height: 35px;
+  background: linear-gradient(to bottom, #888, #d48806);
+}
+.hanging-lamp-shade {
+  width: 48px;
+  height: 24px;
+  background: #111;
+  border: 2px solid #f5a623;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 0 25px rgba(245, 166, 35, 0.8);
+  position: relative;
+}
+.hanging-lamp-shade::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 120px solid rgba(245, 166, 35, 0.12);
+  pointer-events: none;
+}
+
+.board-column-card {
+  background: rgba(18, 10, 6, 0.9);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+}
+.board-column-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px -5px rgba(0, 0, 0, 0.8), 0 0 20px rgba(245, 166, 35, 0.3);
+}
+
+.board-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+.board-item-row:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.board-item-row:hover .board-item-add {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.board-item-add {
+  opacity: 0.6;
+  transform: scale(0.9);
+  transition: all 0.2s ease;
+}
+
+/* Category Pills for Official Board */
+.board-cat-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #D1D5DB;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.board-cat-btn:hover {
+  background: rgba(245, 166, 35, 0.2);
+  border-color: rgba(245, 166, 35, 0.6);
+  color: #FFFDF9;
+  transform: translateY(-1px);
+}
+.board-cat-btn.active {
+  background: linear-gradient(135deg, #F5A623, #FFC043);
+  border-color: #F5A623;
+  color: #0B0604;
+  font-weight: 900;
+  box-shadow: 0 4px 18px rgba(245, 166, 35, 0.45);
+}
+
+/* Spotlight Single-Card Container */
+.board-spotlight-card {
+  animation: spotlightFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes spotlightFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.chalk-font {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.08em;
+}
+
+.slogan-gold-pill {
+  background: linear-gradient(90deg, transparent, rgba(245, 166, 35, 0.2) 20%, rgba(245, 166, 35, 0.2) 80%, transparent);
+  border-top: 1px dashed rgba(245, 166, 35, 0.4);
+  border-bottom: 1px dashed rgba(245, 166, 35, 0.4);
+}
+

@@ -1,0 +1,35 @@
+:root {
+  /* Ultra-Premium Clean Food Brand Palette */
+  --color-primary-red: #D91D24;
+  --color-primary-red-hover: #BF141B;
+  --color-accent-gold: #F5A623;
+  --color-gold-light: #FFC72C;
+  --color-gold-warm: #E89518;
+  --color-dark-chocolate: #2B150C;
+  --color-dark-espresso: #1A0D07;
+  
+  /* Bright, Fresh Clean Backgrounds */
+  --bg-page: #FFFDF9;
+  --bg-surface: #FFFFFF;
+  --bg-warm-tint: #FFF8EE;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FFFDF8;
+  --color-border: #EFE6DC;
+  --color-border-dark: #DFD3C5;
+  
+  /* Text */
+  --text-main: #1C130E;
+  --text-muted: #6B5B52;
+  --text-light: #94857C;
+
+  /* Typography */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Montserrat', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 4px 20px -2px rgba(43, 21, 12, 0.06), 0 2px 6px -1px rgba(43, 21, 12, 0.04);
+  --shadow-hover: 0 16px 36px -6px rgba(217, 29, 36, 0.15), 0 4px 12px -2px rgba(43, 21, 12, 0.06);
+  --shadow-red: 0 8px 24px -4px rgba(217, 29, 36, 0.35);
+  --shadow-gold: 0 8px 24px -4px rgba(245, 166, 35, 0.35);
+}
