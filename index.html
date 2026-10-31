@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAFFLE ORBIT — Sankarankovil | Feast of Fusion • Waffles & UFO Burgers</title>
+  <meta name="description" content="Sankarankovil's #1 destination for Belgian honeycomb waffles, zero-leak sealed UFO burgers, rectangle pizzas, and crispy broasted chicken. 100% Halal Certified.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orbit: {
+              gold: '#F5A623',
+              goldLight: '#FFC043',
+              goldWarm: '#E68A00',
+              red: '#D91D24',
+              dark: '#0B0604',
+              surface: '#140B07',
+              card: '#170E09'
+            }
+          },
+          fontFamily: {
+            display: ['Cinzel', 'serif'],
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#0B0604] text-[#FFFDF9] waffle-mesh-pattern selection:bg-[#F5A623] selection:text-black">
+
+  <!-- =========================================================================
+       FIXED UNIFIED MASTER HEADER (100% SOLID OPAQUE • ZERO TEXT BLEED-THROUGH)
+       ========================================================================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#0C0604] border-b border-amber-500/35 shadow-2xl transition-all duration-300">
+    
+    <!-- Top Promotional Ticker Strip (100% Solid) -->
+    <div class="bg-[#120804] border-b border-white/10 text-[11px] sm:text-xs py-1 px-4 text-stone-300">
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+        
+        <!-- Live Store Status -->
+        <div class="flex items-center gap-2 shrink-0">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="font-extrabold text-amber-300 uppercase tracking-wider">WAFFLE ORBIT</span>
+          <span class="text-stone-500">•</span>
+          <span class="hidden sm:inline text-stone-300 font-semibold">Open 10 AM – 10 PM</span>
+        </div>
+
+        <!-- Animated Offers Ticker -->
+        <div class="ticker-wrap flex-1 text-center font-bold text-amber-300/95 overflow-hidden">
+          <div class="ticker-move flex items-center gap-8 text-[11px] sm:text-xs tracking-wide">
+            <span>🔥 <strong class="text-white">SPECIAL OFFER:</strong> Buy 2 Belgian Waffles & Get Thick Milkshake @ ₹49!</span>
+            <span>✨ <strong class="text-white">COMBO DEAL:</strong> FLAT 15% OFF on Family Packs • Use Code: <span class="bg-amber-400/20 text-amber-300 px-1.5 py-0.5 rounded border border-amber-400/30">ORBIT15</span></span>
+            <span>🛵 <strong class="text-emerald-400">FREE DELIVERY:</strong> On All Sankarankovil Orders Above ₹299!</span>
+            <span>🛸 <strong class="text-white">ZERO-LEAK UFO BURGERS:</strong> Starting @ ₹110 • Sealed Fresh</span>
+            <span>🔥 <strong class="text-white">SPECIAL OFFER:</strong> Buy 2 Belgian Waffles & Get Thick Milkshake @ ₹49!</span>
+          </div>
+        </div>
+
+        <!-- Phone Contact (Phone Emoji) -->
+        <div class="hidden md:flex items-center gap-1.5 text-stone-300 shrink-0">
+          <a href="tel:+919600875941" class="font-black text-amber-300 hover:underline flex items-center gap-1.5 text-xs">
+            <span class="text-sm">📞</span>
+            <span>+91 96008 75941</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar (100% Solid, Zero Letter Bleed-Through) -->
+    <div class="bg-[#0C0604]">
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
+        
+        <!-- Left Group: Brand Logo & Navigation Links (Together • Zero Awkward Gaps) -->
+        <div class="flex items-center gap-5 xl:gap-7 shrink-0">
+          <!-- Brand Logo & Title -->
+          <a href="#section-home" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+            <div class="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full p-0.5 bg-gradient-to-tr from-[#D91D24] via-[#F5A623] to-[#FFC043] shadow-md group-hover:scale-105 transition-transform duration-300">
+              <img 
+                src="assets/logo.jpeg" 
+                alt="Waffle Orbit Logo" 
+                class="w-full h-full object-cover rounded-full"
+              >
+              <div class="absolute -inset-1 rounded-full bg-amber-400/20 blur-sm pointer-events-none group-hover:bg-amber-400/40 transition-colors"></div>
+            </div>
+
+            <div class="flex flex-col">
+              <div class="flex items-center gap-1.5 leading-none">
+                <span class="font-display font-black text-lg sm:text-xl tracking-wider text-white">WAFFLE</span>
+                <span class="font-display font-black text-lg sm:text-xl tracking-wider text-gold-gradient">ORBIT</span>
+              </div>
+              <span class="text-[9px] sm:text-[9.5px] font-black uppercase tracking-widest text-amber-400/90 font-heading mt-0.5">
+                Feast of Fusion • Sankarankovil
+              </span>
+            </div>
+          </a>
+
+          <!-- Navigation Links (Tight & Cohesive • No Gaps) -->
+          <nav class="hidden lg:flex items-center gap-1 xl:gap-1.5 text-xs font-bold uppercase tracking-wider">
+            <a href="#section-home" data-nav="home" class="nav-link active-nav-pill transition-all" data-i18n="nav_home">Home</a>
+            <a href="#section-about" data-nav="about" class="nav-link inactive-nav-link transition-all" data-i18n="nav_about">About Us</a>
+            <a href="#section-menu" data-nav="menu" class="nav-link inactive-nav-link transition-all" data-i18n="nav_menu">Menu (50+)</a>
+            <a href="#section-offers" data-nav="offers" class="nav-link inactive-nav-link transition-all relative">
+              <span data-i18n="nav_offers">Offers</span>
+              <span class="ml-1 px-1.5 py-0.2 rounded-full bg-red-600 text-[9px] font-black text-white shadow-sm">Deal</span>
+            </a>
+            <a href="#section-reels" data-nav="reels" class="nav-link inactive-nav-link transition-all flex items-center gap-1">
+              <span>Reels</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-pink-500 animate-pulse"></span>
+            </a>
+            <a href="#section-gallery" data-nav="gallery" class="nav-link inactive-nav-link transition-all" data-i18n="nav_gallery">Gallery</a>
+            <a href="#section-contact" data-nav="contact" class="nav-link inactive-nav-link transition-all" data-i18n="nav_contact">Visit Us</a>
+          </nav>
+        </div>
+
+        <!-- Right Action Items (Generously separated • No horizontal overflow) -->
+        <div class="flex items-center gap-2 sm:gap-3 shrink-0 pl-3 xl:pl-4 border-l border-white/20 ml-2 xl:ml-3">
+          
+          <!-- Language Switcher Dropdown -->
+          <div class="relative" id="lang-dropdown-wrapper">
+            <button 
+              type="button"
+              onclick="toggleLangDropdown(event)" 
+              id="current-lang-btn"
+              class="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-[#1A0E08] border border-amber-500/40 text-amber-300 hover:text-white font-bold text-xs transition-all shadow-sm"
+              title="Choose Language (மொழி)"
+            >
+              <span>🌐</span>
+              <span id="current-lang-label" class="font-bold">English</span>
+              <span class="text-[10px] text-amber-400">▾</span>
+            </button>
+            
+            <div 
+              id="lang-dropdown-menu" 
+              class="hidden absolute right-0 mt-2 w-36 rounded-2xl bg-[#140B07] border border-amber-500/40 shadow-2xl py-1.5 z-50 backdrop-blur-xl"
+            >
+              <button onclick="changeLanguage('en')" class="w-full text-left px-3.5 py-2 text-xs font-bold text-stone-300 hover:bg-amber-500 hover:text-black flex items-center justify-between transition-colors">
+                <span>English</span>
+                <span class="text-[10px] text-amber-400 opacity-80">EN</span>
+              </button>
+              <button onclick="changeLanguage('ta')" class="w-full text-left px-3.5 py-2 text-xs font-bold text-stone-300 hover:bg-amber-500 hover:text-black flex items-center justify-between transition-colors">
+                <span>தமிழ்</span>
+                <span class="text-[10px] text-amber-400 opacity-80">TA</span>
+              </button>
+              <button onclick="changeLanguage('hi')" class="w-full text-left px-3.5 py-2 text-xs font-bold text-stone-300 hover:bg-amber-500 hover:text-black flex items-center justify-between transition-colors">
+                <span>हिंदी</span>
+                <span class="text-[10px] text-amber-400 opacity-80">HI</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Official Zomato Delivery Partner Button (PROMINENT PILL IN NAVBAR) -->
+          <a 
+            href="https://www.zomato.com/cs/sankarankovil/waffle-orbit-sankarankovil-locality/order"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-zomato-nav"
+            title="Order Online on Zomato"
+          >
+            <span>🔴</span>
+            <span>ZOMATO</span>
+            <span class="px-1.5 py-0.2 rounded bg-black/30 text-amber-300 font-extrabold text-[10px]">4.9 ★</span>
+          </a>
+
+          <!-- Cart Trigger Button -->
+          <button 
+            onclick="openCart()"
+            class="relative p-2 rounded-full bg-gradient-to-tr from-[#25150E] to-[#1C0F0A] border border-amber-400/40 text-amber-300 hover:text-white transition-all hover:scale-105 shadow-md shadow-black"
+            title="Open Order Request Tray"
+          >
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+            <span class="cart-badge absolute -top-1 -right-1 w-5 h-5 rounded-full bg-[#D91D24] text-white text-[10px] font-black flex items-center justify-center border-2 border-black hidden">
+              0
+            </span>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button 
+            onclick="toggleMobileMenu()" 
+            class="lg:hidden p-2 text-stone-300 hover:text-white"
+          >
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Dropdown Navigation -->
+      <div id="mobile-nav-menu" class="hidden lg:hidden bg-[#140B07] border-b border-[#2C180E] px-4 py-4 space-y-3">
+        <div class="grid grid-cols-2 gap-2 text-xs font-bold">
+          <a href="#section-home" data-nav="home" onclick="toggleMobileMenu()" class="mobile-nav-link p-2.5 rounded-xl bg-amber-500/20 text-left text-amber-300 border border-amber-400/40" data-i18n="nav_home">Home</a>
+          <a href="#section-about" data-nav="about" onclick="toggleMobileMenu()" class="mobile-nav-link p-2.5 rounded-xl bg-white/5 text-left text-stone-300" data-i18n="nav_about">About Us</a>
+          <a href="#section-menu" data-nav="menu" onclick="toggleMobileMenu()" class="mobile-nav-link p-2.5 rounded-xl bg-white/5 text-left text-stone-300" data-i18n="nav_menu">Menu (50+ Items)</a>
+          <a href="#section-offers" data-nav="offers" onclick="toggleMobileMenu()" class="mobile-nav-link p-2.5 rounded-xl bg-white/5 text-left text-stone-300" data-i18n="nav_offers">Deals & Offers</a>
+          <a href="#section-reels" data-nav="reels" onclick="toggleMobileMenu()" class="mobile-nav-link p-2.5 rounded-xl bg-white/5 text-left text-stone-300">Trending Reels</a>
+          <a href="#section-gallery" data-nav="gallery" onclick="toggleMobileMenu()" class="mobile-nav-link p-2.5 rounded-xl bg-white/5 text-left text-stone-300" data-i18n="nav_gallery">Photo Gallery</a>
+          <a href="#section-contact" data-nav="contact" onclick="toggleMobileMenu()" class="mobile-nav-link p-2.5 rounded-xl bg-white/5 text-left text-stone-300 col-span-2 text-center" data-i18n="nav_contact">Visit Us / Map</a>
+        </div>
+
+        <div class="pt-2 border-t border-white/10 flex items-center justify-between">
+          <a 
+            href="https://www.zomato.com/cs/sankarankovil/waffle-orbit-sankarankovil-locality/order"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-zomato-nav text-xs"
+          >
+            <span>🔴 Order on Zomato • 4.9 ★</span>
+          </a>
+
+          <a 
+            href="tel:+919600875941" 
+            class="text-xs font-bold text-amber-400 flex items-center gap-1"
+          >
+            <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+            <span>96008 75941</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- =========================================================================
+       UNIFIED CONTINUOUS SINGLE-PAGE EXPERIENCE WITH LIVE SCROLLSPY
+       ========================================================================= -->
+  <main id="main-content" class="pt-24">
+    
+    <!-- =========================================================================
+         SECTION 1: HERO SHOWCASE (Cinematic Video • Bold CTAs • Wide Canvas)
+         ========================================================================= -->
+    <section id="section-home" class="scroll-mt-header relative pt-2 sm:pt-4 pb-6 sm:pb-8 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        
+        <!-- LEFT COLUMN: CRISP TYPOGRAPHY & PROMINENT CTAs (5 cols) -->
+        <div class="lg:col-span-5 space-y-6 text-center lg:text-left">
+          
+          <!-- Top Halal Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E1109] border border-amber-400/50 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="text-xs font-black uppercase tracking-wider text-amber-300" data-i18n="hero_badge">
+              ★ 100% Halal Certified • Sankarankovil's #1 Waffle & UFO Hub
+            </span>
+          </div>
+
+          <!-- Hero Main Title -->
+          <div class="space-y-2">
+            <h1 class="text-4xl sm:text-6xl xl:text-7xl font-display font-black tracking-tight text-white leading-[1.08]">
+              <span data-i18n="hero_title_1">Taste Beyond</span> <br>
+              <span class="text-gold-gradient" data-i18n="hero_title_2">The Usual!</span>
+            </h1>
+            <p class="text-sm sm:text-base font-heading font-bold text-amber-300 italic" data-i18n="hero_tagline">
+              "Orbit of Taste... Beyond the Usual!"
+            </p>
+          </div>
+
+          <!-- Description -->
+          <p class="text-sm sm:text-base text-stone-300 max-w-xl mx-auto lg:mx-0 leading-relaxed" data-i18n="hero_desc">
+            Freshly ironed Belgian honeycomb waffles, our signature zero-leak sealed UFO flying-saucer burgers, stone-baked rectangle pizzas, and crunchy broasted chicken. Made fresh to order with love!
+          </p>
+
+          <!-- PROFESSIONAL HERO CALL TO ACTION BUTTONS (SLEEK, COMPACT & REFINED) -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1">
+            
+            <!-- 1. OFFICIAL ZOMATO BUTTON: PROFESSIONAL & SLEEK -->
+            <a 
+              href="https://www.zomato.com/cs/sankarankovil/waffle-orbit-sankarankovil-locality/order" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-pro-zomato"
+              title="Order Online on Zomato"
+            >
+              <span>🔴</span>
+              <span>Order on Zomato</span>
+              <span class="px-1.5 py-0.2 rounded bg-black/40 text-amber-300 font-black text-[10px]">4.9 ★</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+
+            <!-- 2. OFFICIAL WHATSAPP BUTTON: PROFESSIONAL EMERALD -->
+            <a 
+              href="https://wa.me/919600875941?text=Hello%20Waffle%20Orbit!%20I%20want%20to%20order%20from%20the%20website%20menu." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-pro-whatsapp"
+              title="Direct Shop Order on WhatsApp"
+            >
+              <i data-lucide="message-circle" class="w-4 h-4 fill-white"></i>
+              <span data-i18n="btn_whatsapp_order">Order on WhatsApp</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+
+            <!-- 3. EXPLORE MENU BUTTON: SLEEK GOLD ACCENT -->
+            <a 
+              href="#section-menu" 
+              class="btn-pro-menu"
+              title="Browse our 50+ Menu Items"
+            >
+              <span>🧇</span>
+              <span data-i18n="btn_explore_menu">Explore Menu (50+)</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-amber-400"></i>
+            </a>
+
+          </div>
+
+          <!-- Trust Badges Bar (Opening Hours Removed) -->
+          <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-stone-400">
+            <div class="flex items-center gap-1.5 font-bold text-white">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+              <span data-i18n="stat_rating">4.9 Customer Rating</span>
+            </div>
+            <span>•</span>
+            <div class="flex items-center gap-1.5 font-semibold text-emerald-400">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+              <span data-i18n="stat_delivery">Take Away & Home Delivery</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: THE CINEMATIC FOOD VIDEO PLAYER (7 cols - LARGER, 100% UNCLUTTERED, NOT HIDDEN IN LEFT) -->
+        <div class="lg:col-span-7 flex justify-center lg:justify-end w-full">
+          <div class="relative w-full max-w-[660px] mx-auto lg:mr-0">
+
+            <!-- Video Header Strip (Above Video • ZERO Content Obscured on Top) -->
+            <div class="flex items-center justify-between gap-2 mb-2.5 px-1">
+              <div class="flex items-center gap-2">
+                <span id="hero-video-active-title" class="px-3 py-1 rounded-full bg-[#1A0E08] border border-amber-400/40 text-[11px] font-black text-amber-300 uppercase tracking-wider shadow-sm flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                  <span>★ All Signatures (Waffle, Burger, Pizza, Mojito)</span>
+                </span>
+                <span class="hidden sm:inline-block px-2 py-0.5 rounded-full bg-amber-500 text-black font-black text-[9px] uppercase tracking-wider">
+                  Original HD
+                </span>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <!-- Play / Pause Button -->
+                <button 
+                  id="hero-video-play-btn" 
+                  onclick="toggleVideoPlay()" 
+                  class="p-2 rounded-full bg-[#1A0E08] hover:bg-black text-white border border-white/20 transition-all hover:scale-105 shadow-md"
+                  title="Play / Pause"
+                >
+                  <i data-lucide="pause" class="w-4 h-4"></i>
+                </button>
+
+                <!-- Mute / Unmute Button -->
+                <button 
+                  id="hero-video-sound-btn" 
+                  onclick="toggleVideoAudio()" 
+                  class="p-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-400 text-black font-black hover:from-amber-400 hover:to-amber-300 border border-amber-300 transition-all hover:scale-105 shadow-lg shadow-amber-500/30 flex items-center gap-1.5 px-2.5 sm:px-3"
+                  title="Mute / Unmute Audio"
+                >
+                  <i data-lucide="volume-2" class="w-4 h-4 text-black animate-pulse"></i>
+                  <span id="hero-sound-label" class="text-[10px] font-black uppercase text-black">Unmuted</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Video Player Frame (Adaptive Aspect Ratio: 16:9 for Signature Reels, 3:2 for Official Board • Zero Black Bars) -->
+            <div 
+              id="hero-video-frame" 
+              class="relative rounded-3xl overflow-hidden gold-glow-box border-2 sm:border-4 border-amber-500/50 bg-[#0C0604] aspect-[16/9] w-full shadow-2xl flex items-center justify-center transition-all duration-300 ease-in-out"
+            >
+              <!-- Video Tag (Unmuted by default, edge-to-edge fill, browser PiP & overlays suppressed) -->
+              <video 
+                id="hero-main-video" 
+                src="assets/gemini_generated_video_a8045179.mp4" 
+                autoplay 
+                loop 
+                playsinline 
+                disablepictureinpicture
+                controlslist="nodownload noplaybackrate nopictureinpicture"
+                oncontextmenu="return false;"
+                class="w-full h-full object-cover"
+              ></video>
+            </div>
+
+            <!-- Reel Switcher Buttons Below Video (Clean Spacing • Zero Overlap) -->
+            <div class="mt-3.5 flex items-center justify-center">
+              <div id="hero-video-tabs" class="flex flex-wrap items-center justify-center gap-2">
+                <!-- Rendered dynamically via renderHeroVideoTabs() -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    
+    <!-- =========================================================================
+         SECTION 2: ABOUT US (Placed Immediately Next to Home)
+         ========================================================================= -->
+    <section id="section-about" class="scroll-mt-header py-8 sm:py-10 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto space-y-8">
+      <div class="text-center space-y-3 max-w-2xl mx-auto">
+      <span class="badge-halal-luxury">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
+        <span>Our Culinary Story</span>
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-display font-black text-white" data-i18n="nav_about">
+        About WAFFLE ORBIT
+      </h1>
+      <p class="text-xs sm:text-sm text-stone-400">
+        Bringing an international dessert & fast food experience to Sankarankovil
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-6 space-y-5">
+        <span class="text-xs font-black text-amber-400 uppercase tracking-wider">Feast of Fusion</span>
+        <h2 class="text-2xl sm:text-4xl font-display font-black text-white">
+          Where Belgian Sweetness Meets Sankarankovil
+        </h2>
+        <p class="text-xs sm:text-sm text-stone-300 leading-relaxed">
+          At <strong>WAFFLE ORBIT</strong>, we believed foodies in Sankarankovil deserved the same artisanal dessert quality found in metro cities. We imported heavy cast-iron waffle presses, developed our signature feather-light batter, and introduced the groundbreaking <strong>zero-leak sealed UFO Burger</strong> to the town!
+        </p>
+        <p class="text-xs sm:text-sm text-stone-300 leading-relaxed">
+          Every chicken item is <strong>100% Halal certified</strong>, slow-marinated for 12 hours with secret seasonings, and pressure-broasted or grilled hot to order.
+        </p>
+
+        <div class="grid grid-cols-2 gap-4 pt-2">
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
+            <p class="text-amber-400 font-bold text-sm">100% Halal Certified</p>
+            <p class="text-[11px] text-stone-400">Hygienically sourced chicken marinated in 11 aromatic herbs.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
+            <p class="text-amber-400 font-bold text-sm">Fresh Waffle Batter</p>
+            <p class="text-[11px] text-stone-400">Never frozen. Cast-iron baked to crispy golden honeycomb perfection.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 flex justify-center">
+        <div class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden border-4 border-amber-500/40 shadow-2xl p-1 bg-gradient-to-tr from-[#D91D24] to-[#F5A623]">
+          <img 
+            src="assets/logo.jpeg" 
+            alt="Official Waffle Orbit Brand Seal" 
+            class="w-full h-full object-cover rounded-[22px]"
+          >
+        </div>
+      </div>
+    </div>
+    </section>
+
+    
+    <!-- =========================================================================
+         SECTION 3: COMPLETE MENU (50+ Items • Search • Filters)
+         ========================================================================= -->
+    <section id="section-menu" class="scroll-mt-header py-8 sm:py-10 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto space-y-8">
+      <!-- Header -->
+    <div class="text-center space-y-3 max-w-2xl mx-auto">
+      <span class="badge-halal-luxury">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
+        <span>100% Halal • Fresh Made to Order</span>
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-display font-black text-white" data-i18n="nav_menu">
+        Our Complete Menu
+      </h1>
+      <p class="text-xs sm:text-sm text-stone-400">
+        Discover Belgian waffles, UFO burgers, stone-baked rectangle pizzas, fried chicken & coolers
+      </p>
+    </div>
+
+    <!-- Controls Bar (Search + Dietary Filter) -->
+    <div class="glass-panel p-4 sm:p-6 rounded-3xl space-y-4">
+      
+      <div class="flex flex-col sm:flex-row gap-3">
+        <!-- Search -->
+        <div class="relative flex-1">
+          <i data-lucide="search" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400"></i>
+          <input 
+            type="text" 
+            id="menu-search-input"
+            data-i18n-placeholder="search_placeholder"
+            placeholder="Search waffles, UFO burgers, pizzas, milkshakes..." 
+            class="w-full bg-[#110704] border border-[#2B180E] focus:border-amber-400 rounded-2xl pl-10 pr-4 py-2.5 text-xs sm:text-sm text-white placeholder:text-stone-500 focus:outline-none transition-colors"
+          >
+        </div>
+
+        <!-- Veg / Non-Veg Toggle -->
+        <div class="flex items-center bg-[#110704] border border-[#2B180E] rounded-2xl p-1 gap-1">
+          <button onclick="setDietary('all')" class="diet-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-amber-500 text-black font-black" data-diet="all" data-i18n="filter_all">All</button>
+          <button onclick="setDietary('veg')" class="diet-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all text-stone-300 hover:text-white" data-diet="veg" data-i18n="filter_veg">Pure Veg</button>
+          <button onclick="setDietary('non-veg')" class="diet-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all text-stone-300 hover:text-white" data-diet="non-veg" data-i18n="filter_non_veg">Non-Veg</button>
+        </div>
+      </div>
+
+      <!-- Horizontal Scrollable Category Filter Pills -->
+      <div id="category-filter-bar" class="flex items-center gap-2 overflow-x-auto pb-1 pt-1 no-scrollbar">
+        <!-- Rendered via renderCategories() -->
+      </div>
+
+    </div>
+
+    <!-- Products Grid -->
+    <div id="menu-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Rendered via renderProducts() -->
+    </div>
+    </section>
+
+    
+    <!-- =========================================================================
+         SECTION 4: THE OFFICIAL SHOP MENU BOARD (Exact 7-Column Store Layout)
+         ========================================================================= -->
+    <section id="section-board" class="scroll-mt-header py-8 sm:py-10 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto space-y-8">
+      <!-- ---------------------------------------------------------------------
+         THE OFFICIAL WAFFLE ORBIT SHOP MENU BOARD (Exact 7-Column Store Layout)
+         --------------------------------------------------------------------- -->
+    
+      
+      <!-- Section Intro Header -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-8">
+        <div class="space-y-1.5">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-400/40 text-amber-300 text-xs font-black uppercase tracking-wider">
+            <i data-lucide="layout" class="w-3.5 h-3.5"></i>
+            <span>Authentic Store Menu Board</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-display font-black text-white">
+            The Official Shop Board
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-300">
+            Exact 7-column layout from our Kalugumalai Road store. Click any dish (+) to add directly to your order tray!
+          </p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button 
+            onclick="openLightbox('assets/official-menu-board.png', 'Official Waffle Orbit Store Menu Board')"
+            class="px-4 py-2.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs font-bold transition-all flex items-center gap-2 shadow-lg"
+          >
+            <i data-lucide="maximize-2" class="w-4 h-4 text-amber-400"></i>
+            <span>Zoom Real Board Photo</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- The Board Master Frame -->
+      <div class="official-board-frame p-4 sm:p-8 space-y-6">
+        
+        <!-- Board Top Header (Lamps, Halal Logo, Center Logo, Love Seal) -->
+        <div class="relative flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-amber-500/20">
+          
+          <!-- Left: Hanging Lamp + Halal Emblem -->
+          <div class="flex items-center gap-6">
+            <div class="hanging-lamp hidden sm:flex">
+              <div class="hanging-lamp-shade"></div>
+            </div>
+
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-emerald-400/70 p-1 flex flex-col items-center justify-center bg-black/60 shadow-lg shadow-emerald-500/20 text-emerald-400">
+              <span class="text-lg sm:text-xl font-black font-display">حلال</span>
+              <span class="text-[9px] font-black tracking-widest uppercase">HALAL</span>
+            </div>
+          </div>
+
+          <!-- Center: Brand Logo & Tagline -->
+          <div class="text-center space-y-1">
+            <div class="flex items-center justify-center gap-2">
+              <div class="w-9 h-9 rounded-full bg-amber-400/20 p-1 border border-amber-400/60 flex items-center justify-center">
+                <span class="text-xl">🪐</span>
+              </div>
+              <h1 class="text-3xl sm:text-5xl font-display font-black tracking-wider text-white">
+                WAFFLE <span class="text-amber-400">ORBIT</span>
+              </h1>
+            </div>
+
+            <p class="font-heading italic font-bold text-amber-200 text-sm sm:text-base tracking-wide">
+              Orbit of Taste... Beyond the Usual!
+            </p>
+
+            <div class="inline-block px-4 py-0.5 rounded-full bg-gradient-to-r from-amber-500/30 via-amber-400/20 to-amber-500/30 border border-amber-400/50 text-amber-300 text-[11px] font-black uppercase tracking-widest">
+              ★ GOOD FOOD ★ GOOD MOOD ★ GOOD TIME ★
+            </div>
+          </div>
+
+          <!-- Right: Hanging Lamp + Fresh Made with Love Seal -->
+          <div class="flex items-center gap-6">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-dashed border-amber-400/70 p-2 flex flex-col items-center justify-center text-center bg-black/60 shadow-lg shadow-amber-500/20 text-amber-300">
+              <span class="text-[8px] font-black uppercase tracking-wider">FRESH MADE</span>
+              <span class="text-xs">❤️</span>
+              <span class="text-[8px] font-black uppercase tracking-wider">WITH LOVE</span>
+            </div>
+
+            <div class="hanging-lamp hidden sm:flex">
+              <div class="hanging-lamp-shade"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Official Board Container (Category Switcher Tabs + 7-Column Grid / Single Card Spotlight) -->
+        <div id="official-board-columns-container" class="space-y-4">
+          <!-- Rendered dynamically via renderOfficialBoard() -->
+        </div>
+
+        <!-- Middle Slogan Ribbon -->
+        <div class="slogan-gold-pill py-3 px-4 flex flex-col sm:flex-row items-center justify-between text-center gap-2 text-xs font-bold text-stone-300">
+          <div class="flex items-center gap-1.5 text-rose-400 font-black">
+            <span>Delicious Food</span>
+            <span>★</span>
+            <span>HAPPY MOOD ❤️</span>
+          </div>
+
+          <div class="text-sm sm:text-base font-black text-amber-300 font-display tracking-widest">
+            SIP • BITE • RELAX • REPEAT
+            <span class="block text-[11px] font-medium italic text-stone-400">Thank you! Visit Again...</span>
+          </div>
+
+          <div class="flex items-center gap-1.5 text-amber-400 font-black">
+            <span>GOOD FOOD ★ GOOD FRIENDS ★ GREAT MEMORIES</span>
+          </div>
+        </div>
+
+        <!-- Bottom Footer Contact & Delivery Strip -->
+        <div class="bg-black/80 border border-amber-500/40 rounded-2xl p-4 sm:p-5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-bold">
+          
+          <!-- Location -->
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-white shrink-0 shadow-md shadow-red-600/40">
+              <i data-lucide="map-pin" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <p class="text-red-400 font-black uppercase tracking-wider text-xs">VISIT US!</p>
+              <p class="text-white font-extrabold text-xs sm:text-sm">KALUGUMALAI ROAD, SANKARANKOVIL</p>
+              <p class="text-amber-300 text-[11px]">REFRESH SUPER MARKET WEST SIDE</p>
+            </div>
+          </div>
+
+          <!-- Delivery -->
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-black shrink-0 shadow-md shadow-amber-500/40">
+              <i data-lucide="bike" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <p class="text-amber-400 font-black uppercase tracking-wider text-xs">TAKE AWAY &</p>
+              <p class="text-white font-extrabold text-xs sm:text-sm">HOME DELIVERY</p>
+            </div>
+          </div>
+
+          <!-- Phone Numbers -->
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black shrink-0 shadow-md shadow-white/40">
+              <i data-lucide="phone-call" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <a href="tel:+919600875941" class="text-white hover:text-amber-400 font-black text-sm block">96008 75941</a>
+              <a href="tel:+919751866187" class="text-stone-300 hover:text-amber-400 font-bold text-xs block">97518 66187</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    
+    </section>
+
+    
+    <!-- =========================================================================
+         SECTION 5: DEALS & PROMOTIONS (1-Click Coupon Code Copy)
+         ========================================================================= -->
+    <section id="section-offers" class="scroll-mt-header py-8 sm:py-10 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto space-y-8">
+      <div class="text-center space-y-3 max-w-2xl mx-auto">
+      <span class="badge-halal-luxury">
+        <i data-lucide="tag" class="w-3.5 h-3.5 text-amber-400"></i>
+        <span>Special Promotions</span>
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-display font-black text-white" data-i18n="offers_sec_title">
+        Exclusive Offers & Combos
+      </h1>
+      <p class="text-xs sm:text-sm text-stone-400" data-i18n="offers_sec_tag">
+        Copy coupon codes with one click and apply them directly to your WhatsApp order!
+      </p>
+    </div>
+
+    <div id="offers-cards-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Rendered via renderOffers() -->
+    </div>
+    </section>
+
+    
+    <!-- =========================================================================
+         SECTION 6: OFFICIAL INSTAGRAM REELS SHOWCASE (Matched to Reference Screenshot)
+         ========================================================================= -->
+    <section id="section-reels" class="scroll-mt-header py-8 sm:py-10 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto space-y-8">
+      <!-- ---------------------------------------------------------------------
+         OFFICIAL INSTAGRAM REELS SHOWCASE (Matched to User's Reference Screenshot)
+         --------------------------------------------------------------------- -->
+    
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8 text-center md:text-left">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-black uppercase tracking-wider mb-2">
+            <span>📸</span>
+            <span>Official @waffleorbit25 Food Reels</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-display font-black text-white">
+            Catch Our Latest Sizzle & Stories
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-300 mt-1 max-w-2xl">
+            Watch our authentic Belgian waffle ironing, zero-leak UFO crimping, and refreshing cooler splashes right on Instagram.
+          </p>
+        </div>
+
+        <!-- Follow on Insta Button -->
+        <a 
+          href="https://www.instagram.com/waffleorbit25?exln=cm54Nm1zcmt2ZHpk"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-5 py-2.5 rounded-full bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white font-extrabold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2 shrink-0"
+        >
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>Follow @waffleorbit25</span>
+        </a>
+      </div>
+
+      <!-- Reels Grid (4 Vertical 9:16 Cards Matching Reference Screenshot) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Reel 1 -->
+        <a 
+          href="https://www.instagram.com/reel/DWOZ_siiUxS/?psln=MTVpZzkxZnZiNGpj"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="reel-card group block"
+          title="Watch Belgian Waffle Craft Reel"
+        >
+          <img 
+            src="assets/wa2.jpeg" 
+            alt="Belgian Waffle Reel" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/60"></div>
+          
+          <!-- Top Handle & Tag -->
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+            <span class="px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white font-black text-[11px]">
+              @waffleorbit25
+            </span>
+            <span class="px-2.5 py-1 rounded-full bg-amber-500/80 backdrop-blur-md text-black font-black text-[10px] uppercase">
+              Waffle Craft ★
+            </span>
+          </div>
+
+          <!-- Center Play Button -->
+          <div class="absolute inset-0 flex items-center justify-center z-10">
+            <div class="reel-play-btn">
+              <svg class="w-6 h-6 fill-current ml-1" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+
+          <!-- Bottom Info -->
+          <div class="absolute bottom-4 left-4 right-4 z-10 space-y-1">
+            <h4 class="text-white font-heading font-black text-sm leading-snug group-hover:text-amber-300 transition-colors">
+              Belgian Brioche Ironing & Chocolate Drizzle
+            </h4>
+            <div class="flex items-center justify-between text-xs pt-1 border-t border-white/20">
+              <span class="text-stone-300 text-[11px] font-semibold">Waffle Orbit Studio</span>
+              <span class="text-amber-300 font-bold flex items-center gap-1 text-[11px]">Watch Reel →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Reel 2 -->
+        <a 
+          href="https://www.instagram.com/reel/DbAolzDSp7D/?cplk=ajc2MnFqMmQzbGI5"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="reel-card group block"
+          title="Watch UFO Burger Reel"
+        >
+          <img 
+            src="assets/ufo-chicken-burger.jpg" 
+            alt="UFO Burger Reel" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/60"></div>
+          
+          <!-- Top Handle & Tag -->
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+            <span class="px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white font-black text-[11px]">
+              @waffleorbit25
+            </span>
+            <span class="px-2.5 py-1 rounded-full bg-red-600/90 backdrop-blur-md text-white font-black text-[10px] uppercase">
+              UFO Burger 🛸
+            </span>
+          </div>
+
+          <!-- Center Play Button -->
+          <div class="absolute inset-0 flex items-center justify-center z-10">
+            <div class="reel-play-btn">
+              <svg class="w-6 h-6 fill-current ml-1" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+
+          <!-- Bottom Info -->
+          <div class="absolute bottom-4 left-4 right-4 z-10 space-y-1">
+            <h4 class="text-white font-heading font-black text-sm leading-snug group-hover:text-amber-300 transition-colors">
+              Zero-Leak UFO Flying Saucer Burger Press
+            </h4>
+            <div class="flex items-center justify-between text-xs pt-1 border-t border-white/20">
+              <span class="text-stone-300 text-[11px] font-semibold">Waffle Orbit Kitchen</span>
+              <span class="text-amber-300 font-bold flex items-center gap-1 text-[11px]">Watch Reel →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Reel 3 -->
+        <a 
+          href="https://www.instagram.com/reel/DaS9bFspCbQ/?dlrf=MWs3ZW5zMnNtbXN6dQ=="
+          target="_blank"
+          rel="noopener noreferrer"
+          class="reel-card group block"
+          title="Watch Chocolate Sandwich Reel"
+        >
+          <img 
+            src="assets/waffle-sandwich-chocolate.jpg" 
+            alt="Chocolate Sandwich Reel" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/60"></div>
+          
+          <!-- Top Handle & Tag -->
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+            <span class="px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white font-black text-[11px]">
+              @waffleorbit25
+            </span>
+            <span class="px-2.5 py-1 rounded-full bg-amber-400/90 backdrop-blur-md text-black font-black text-[10px] uppercase">
+              Chocolate Feast 🍫
+            </span>
+          </div>
+
+          <!-- Center Play Button -->
+          <div class="absolute inset-0 flex items-center justify-center z-10">
+            <div class="reel-play-btn">
+              <svg class="w-6 h-6 fill-current ml-1" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+
+          <!-- Bottom Info -->
+          <div class="absolute bottom-4 left-4 right-4 z-10 space-y-1">
+            <h4 class="text-white font-heading font-black text-sm leading-snug group-hover:text-amber-300 transition-colors">
+              Molten Nutella & Crispy Waffle Sandwich
+            </h4>
+            <div class="flex items-center justify-between text-xs pt-1 border-t border-white/20">
+              <span class="text-stone-300 text-[11px] font-semibold">Dessert Special</span>
+              <span class="text-amber-300 font-bold flex items-center gap-1 text-[11px]">Watch Reel →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Reel 4 -->
+        <a 
+          href="https://www.instagram.com/reel/Dcfv4yQyKKd/?obrf=MWdmdGpwcjNtNTkzYQ=="
+          target="_blank"
+          rel="noopener noreferrer"
+          class="reel-card group block"
+          title="Watch Mojito Splash Reel"
+        >
+          <img 
+            src="assets/mojito-blue-lagoon.jpg" 
+            alt="Mojito Splash Reel" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/60"></div>
+          
+          <!-- Top Handle & Tag -->
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+            <span class="px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white font-black text-[11px]">
+              @waffleorbit25
+            </span>
+            <span class="px-2.5 py-1 rounded-full bg-cyan-400/90 backdrop-blur-md text-black font-black text-[10px] uppercase">
+              Mojito Splash 🍸
+            </span>
+          </div>
+
+          <!-- Center Play Button -->
+          <div class="absolute inset-0 flex items-center justify-center z-10">
+            <div class="reel-play-btn">
+              <svg class="w-6 h-6 fill-current ml-1" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+
+          <!-- Bottom Info -->
+          <div class="absolute bottom-4 left-4 right-4 z-10 space-y-1">
+            <h4 class="text-white font-heading font-black text-sm leading-snug group-hover:text-amber-300 transition-colors">
+              Blue Lagoon & Fresh Mint Mocktail Pour
+            </h4>
+            <div class="flex items-center justify-between text-xs pt-1 border-t border-white/20">
+              <span class="text-stone-300 text-[11px] font-semibold">Chilled Mocktails</span>
+              <span class="text-amber-300 font-bold flex items-center gap-1 text-[11px]">Watch Reel →</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    
+    </section>
+
+    
+    <!-- =========================================================================
+         SECTION 7: PHOTO GALLERY (Real Kitchen & Food Photos)
+         ========================================================================= -->
+    <section id="section-gallery" class="scroll-mt-header py-8 sm:py-10 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto space-y-8">
+      <div class="text-center space-y-3 max-w-2xl mx-auto">
+      <span class="badge-halal-luxury">
+        <i data-lucide="camera" class="w-3.5 h-3.5 text-amber-400"></i>
+        <span>Authentic Food Photography</span>
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-display font-black text-white" data-i18n="nav_gallery">
+        Waffle Orbit Visual Feast
+      </h1>
+      <p class="text-xs sm:text-sm text-stone-400">
+        Browse real, unedited photographs of our dishes fresh from our kitchen in Sankarankovil
+      </p>
+    </div>
+
+    <div id="gallery-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+      <!-- Rendered via renderGallery() -->
+    </div>
+    </section>
+
+    
+    <!-- =========================================================================
+         SECTION 8: VISIT US & GOOGLE MAPS
+         ========================================================================= -->
+    <section id="section-contact" class="scroll-mt-header py-8 sm:py-10 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto space-y-8">
+      <div class="text-center space-y-3 max-w-2xl mx-auto">
+      <span class="badge-halal-luxury">
+        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i>
+        <span data-i18n="visit_sec_badge">Locate Our Shop</span>
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-display font-black text-white" data-i18n="nav_contact">
+        Visit Waffle Orbit
+      </h1>
+      <p class="text-xs sm:text-sm text-stone-400">
+        Drop by Kalugumalai Road or call us for instant takeaway and home delivery!
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-5 luxury-food-card p-6 sm:p-8 space-y-5">
+        <h3 class="font-heading font-black text-xl text-white">Shop Address & Phone</h3>
+        
+        <div class="space-y-4 text-xs sm:text-sm text-stone-300">
+          <div class="flex items-start gap-3">
+            <i data-lucide="map-pin" class="w-5 h-5 text-red-500 shrink-0 mt-0.5"></i>
+            <div>
+              <p class="font-bold text-white">WAFFLE ORBIT</p>
+              <p>18, Sowdrapandiya, Vinayagar Kovil Street, Kalugumalai Rd, Sankarankoil, Tamil Nadu 627756</p>
+              <p class="text-amber-400 font-bold mt-1">(West Side of Refresh Super Market)</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <i data-lucide="clock" class="w-5 h-5 text-amber-400 shrink-0"></i>
+            <div>
+              <p class="font-bold text-white">Opening Timings</p>
+              <p>10:00 AM – 10:00 PM (Monday – Sunday)</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <i data-lucide="phone" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+            <div>
+              <p class="font-bold text-white">Phone Numbers</p>
+              <a href="tel:+919600875941" class="text-amber-300 font-black hover:underline">+91 96008 75941 / 97518 66187</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+          <a 
+            href="https://maps.app.goo.gl/k3m1Wqum1mVwPpLK9" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn-gold-primary text-xs py-3 w-full"
+          >
+            <span data-i18n="btn_get_directions">Open in Google Maps</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+
+          <a 
+            href="https://wa.me/919600875941" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn-whatsapp-glow text-xs py-3 w-full"
+          >
+            <span data-i18n="btn_whatsapp_order">Message on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 h-96 rounded-3xl overflow-hidden border border-white/15 shadow-2xl">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1531578.443488981!2d76.03393438449565!3d9.13638274008889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06979edcdff633%3A0xe69b6ef1b410a508!2sWAFFLE%20ORBIT!5e0!3m2!1sen!2sin!4v1793348525707!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border: 0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Waffle Orbit Google Map Sankarankovil"
+        ></iframe>
+      </div>
+    </div>
+    </section>
+
+  </main>
+
+<!-- =========================================================================
+       SLIDE-OVER CART DRAWER
+       ========================================================================= -->
+  <div id="cart-backdrop" onclick="closeCart()" class="drawer-backdrop fixed inset-0 bg-black/80 backdrop-blur-sm z-50"></div>
+  
+  <div id="cart-drawer" class="drawer-panel fixed top-0 right-0 bottom-0 w-full max-w-md bg-[#130A06] border-l border-[#2B190F] shadow-2xl z-50 flex flex-col justify-between">
+    
+    <!-- Drawer Header -->
+    <div class="p-5 border-b border-white/10 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <i data-lucide="shopping-bag" class="w-5 h-5 text-amber-400"></i>
+        <h3 class="font-heading font-black text-lg text-white" data-i18n="cart_title">Your Feast Tray</h3>
+      </div>
+      <button onclick="closeCart()" class="p-2 text-stone-400 hover:text-white rounded-xl bg-white/5">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Items List (Scrollable) -->
+    <div id="cart-items-list" class="flex-1 overflow-y-auto p-5 space-y-3">
+      <!-- Rendered via renderCartDrawer() -->
+    </div>
+
+    <!-- Checkout Footer Form -->
+    <div class="p-5 border-t border-white/10 bg-[#0E0604] space-y-4">
+      
+      <!-- Customer Info Inputs (Full Details for Accurate Delivery) -->
+      <div class="space-y-2.5 bg-black/40 p-3.5 rounded-2xl border border-white/10">
+        <div class="text-[11px] font-bold text-amber-300 uppercase tracking-wider flex items-center justify-between">
+          <span>Customer & Delivery Details</span>
+          <span class="text-[10px] text-amber-400/80 font-normal">*Required</span>
+        </div>
+
+        <input 
+          type="text" 
+          id="checkout-customer-name" 
+          placeholder="Your Name (உங்கள் பெயர்)*" 
+          class="w-full bg-[#1A0E08] border border-white/15 rounded-xl px-3.5 py-2 text-xs text-white placeholder:text-stone-500 focus:outline-none focus:border-amber-400"
+          required
+        >
+
+        <div class="grid grid-cols-2 gap-2">
+          <input 
+            type="tel" 
+            id="checkout-customer-phone" 
+            placeholder="Phone / WhatsApp Number*" 
+            class="bg-[#1A0E08] border border-white/15 rounded-xl px-3 py-2 text-xs text-white placeholder:text-stone-500 focus:outline-none focus:border-amber-400"
+            required
+          >
+          <select 
+            id="checkout-order-type" 
+            class="bg-[#1A0E08] border border-white/15 rounded-xl px-3 py-2 text-xs text-stone-200 focus:outline-none focus:border-amber-400"
+          >
+            <option value="Home Delivery">🛵 Home Delivery</option>
+            <option value="Take Away (Self Pickup)">🥡 Take Away</option>
+            <option value="Dine-In">🍽️ Dine-In</option>
+          </select>
+        </div>
+
+        <textarea 
+          id="checkout-customer-address" 
+          rows="2"
+          placeholder="Delivery Address & Landmark in Sankarankovil*" 
+          class="w-full bg-[#1A0E08] border border-white/15 rounded-xl px-3.5 py-2 text-xs text-white placeholder:text-stone-500 focus:outline-none focus:border-amber-400 resize-none"
+        ></textarea>
+
+        <input 
+          type="text" 
+          id="checkout-order-note" 
+          placeholder="Special Instructions (e.g. Less spicy, Extra ketchup)" 
+          class="w-full bg-[#1A0E08] border border-white/10 rounded-xl px-3.5 py-1.5 text-xs text-white placeholder:text-stone-500 focus:outline-none focus:border-amber-400"
+        >
+      </div>
+
+      <!-- Pricing Summary -->
+      <div class="space-y-1.5 text-xs text-stone-300 pt-2 border-t border-white/5">
+        <div class="flex justify-between">
+          <span data-i18n="cart_subtotal">Subtotal</span>
+          <span id="cart-subtotal-val" class="font-bold text-white">₹0</span>
+        </div>
+        <div id="cart-discount-row" class="flex justify-between text-emerald-400 hidden">
+          <span data-i18n="cart_discount">Coupon Discount</span>
+          <span id="cart-discount-val" class="font-bold">-₹0</span>
+        </div>
+        <div class="flex justify-between text-base font-black text-amber-400 pt-1 border-t border-white/10">
+          <span data-i18n="cart_total">Estimated Total</span>
+          <span id="cart-total-val">₹0</span>
+        </div>
+      </div>
+
+      <!-- WhatsApp Checkout Button -->
+      <button 
+        onclick="sendWhatsAppOrder()"
+        class="w-full btn-whatsapp-glow py-3.5 text-xs sm:text-sm font-black flex items-center justify-center gap-2"
+      >
+        <i data-lucide="message-circle" class="w-4 h-4 fill-white"></i>
+        <span data-i18n="btn_checkout_whatsapp">Send Order via WhatsApp</span>
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- =========================================================================
+       PRODUCT DETAIL CUSTOMIZATION MODAL
+       ========================================================================= -->
+  <div id="product-detail-modal" class="modal-backdrop fixed inset-0 bg-black/85 backdrop-blur-md z-50 flex items-center justify-center p-4">
+    <div class="modal-card w-full max-w-lg rounded-3xl bg-[#140B07] border-2 border-amber-500/40 shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+      
+      <!-- Top Image Header -->
+      <div class="relative aspect-video w-full overflow-hidden bg-black shrink-0">
+        <img 
+          id="modal-product-img" 
+          src="assets/wa2.jpeg" 
+          alt="Product Detail" 
+          class="w-full h-full object-cover"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+        
+        <button 
+          onclick="closeProductModal()" 
+          class="absolute top-3 right-3 p-2 rounded-full bg-black/60 text-white hover:bg-black/90 transition-colors"
+        >
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+
+        <div class="absolute bottom-3 left-4 flex items-center gap-2">
+          <div id="modal-diet-badge"></div>
+          <span class="badge-halal-luxury">100% Halal</span>
+        </div>
+      </div>
+
+      <!-- Content (Scrollable) -->
+      <div class="p-6 overflow-y-auto space-y-5">
+        <div>
+          <h2 id="modal-product-name" class="font-heading font-black text-2xl text-white"></h2>
+          <div class="flex items-center gap-2 mt-1 text-xs text-amber-400">
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+            <span id="modal-product-rating" class="font-bold"></span>
+            <span id="modal-product-reviews" class="text-stone-400 font-normal"></span>
+          </div>
+          <p id="modal-product-desc" class="text-xs sm:text-sm text-stone-300 mt-2.5 leading-relaxed"></p>
+        </div>
+
+        <!-- Addons / Customization Checklist -->
+        <div class="space-y-2">
+          <span class="text-xs font-black uppercase tracking-wider text-amber-400">Choose Extra Delights:</span>
+          <div id="modal-addons-list" class="space-y-2">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Action -->
+      <div class="p-5 border-t border-white/10 bg-[#0E0604] flex items-center justify-between gap-4 shrink-0">
+        
+        <!-- Quantity Stepper -->
+        <div class="flex items-center gap-3 bg-[#1C1009] border border-white/10 rounded-2xl p-1.5">
+          <button onclick="updateModalQuantity(-1)" class="w-8 h-8 rounded-xl bg-white/10 hover:bg-white/20 text-white flex items-center justify-center font-black">-</button>
+          <span id="modal-qty-val" class="font-black text-sm text-white w-5 text-center">1</span>
+          <button onclick="updateModalQuantity(1)" class="w-8 h-8 rounded-xl bg-amber-500 text-black flex items-center justify-center font-black">+</button>
+        </div>
+
+        <!-- Add Button -->
+        <button 
+          onclick="addModalItemToCart()"
+          class="flex-1 btn-gold-primary py-3.5 text-xs sm:text-sm flex items-center justify-between"
+        >
+          <span>Add to Tray</span>
+          <span id="modal-total-btn-val" class="font-black">₹0</span>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       LIGHTBOX MODAL FOR GALLERY
+       ========================================================================= -->
+  <div id="lightbox-modal" onclick="closeLightbox()" class="modal-backdrop fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center p-4">
+    <div class="relative max-w-3xl w-full text-center space-y-3" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-white hover:text-amber-400">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <img id="lightbox-img" src="" alt="Gallery Preview" class="w-full max-h-[80vh] object-contain rounded-2xl border-2 border-amber-500/40">
+      <h4 id="lightbox-title" class="font-heading font-black text-lg text-white"></h4>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       AI ORBIT ASSISTANT FLOATING CHATBOT
+       ========================================================================= -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
+    
+    <!-- Chat Window Container -->
+    <div id="orbit-chatbot-window" class="hidden w-80 sm:w-96 rounded-3xl bg-[#140B07] border-2 border-amber-500/40 shadow-2xl overflow-hidden flex flex-col h-[480px]">
+      
+      <!-- Chat Header -->
+      <div class="p-4 bg-gradient-to-r from-[#24130A] to-[#160B06] border-b border-white/10 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-400 to-red-500 p-0.5">
+            <img src="assets/logo.jpeg" alt="Bot" class="w-full h-full object-cover rounded-full">
+          </div>
+          <div>
+            <h4 class="font-heading font-black text-xs text-white">Meet Orbit Assistant</h4>
+            <p class="text-[10px] text-emerald-400 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              Online • AI Menu Concierge
+            </p>
+          </div>
+        </div>
+
+        <button onclick="toggleChatbot()" class="text-stone-400 hover:text-white">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Messages Body -->
+      <div id="chatbot-messages" class="flex-1 p-4 overflow-y-auto space-y-3">
+        <div class="flex justify-start">
+          <div class="bg-white/10 border border-white/10 text-white px-3.5 py-2.5 rounded-2xl rounded-tl-none text-xs leading-relaxed max-w-[85%]">
+            👋 Vanakkam! I am your <strong>Orbit Assistant</strong>. Ask me for recommendations, budget waffles, UFO burger secrets, or store timings!
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Canned Queries -->
+      <div class="p-2.5 border-t border-white/10 bg-[#0E0604] flex items-center gap-1.5 overflow-x-auto no-scrollbar text-[11px]">
+        <button onclick="askChatbot('Best Waffles under ₹200')" class="px-2.5 py-1 rounded-full bg-white/5 hover:bg-amber-500 hover:text-black text-stone-300 border border-white/10 whitespace-nowrap">₹200 Waffles</button>
+        <button onclick="askChatbot('What is UFO Burger?')" class="px-2.5 py-1 rounded-full bg-white/5 hover:bg-amber-500 hover:text-black text-stone-300 border border-white/10 whitespace-nowrap">UFO Burger</button>
+        <button onclick="askChatbot('Is Chicken 100% Halal?')" class="px-2.5 py-1 rounded-full bg-white/5 hover:bg-amber-500 hover:text-black text-stone-300 border border-white/10 whitespace-nowrap">Halal?</button>
+        <button onclick="askChatbot('Shop address and timings')" class="px-2.5 py-1 rounded-full bg-white/5 hover:bg-amber-500 hover:text-black text-stone-300 border border-white/10 whitespace-nowrap">Address</button>
+      </div>
+
+    </div>
+
+    <!-- Floating Chat Trigger Button -->
+    <button 
+      onclick="toggleChatbot()"
+      class="p-4 rounded-full bg-gradient-to-tr from-[#D91D24] via-[#F5A623] to-[#FFC043] text-black shadow-xl shadow-amber-500/30 hover:scale-108 transition-transform group flex items-center gap-2"
+      title="Ask Orbit AI Assistant"
+    >
+      <i data-lucide="sparkles" class="w-6 h-6 fill-black"></i>
+      <span class="hidden sm:inline font-heading font-black text-xs text-black">Ask Orbit AI</span>
+    </button>
+
+  </div>
+
+  <!-- =========================================================================
+       FOOTER (ONLY PLACE WHERE ADITYA SKILL GATE CREDIT APPEARS)
+       ========================================================================= -->
+  <footer class="bg-[#0E0604] border-t border-[#2C180E] text-stone-400 text-xs">
+    
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+        
+        <!-- Col 1: Bio -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full p-0.5 bg-gradient-to-tr from-amber-400 to-red-500">
+              <img src="assets/logo.jpeg" alt="Logo" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div>
+              <h3 class="font-display font-black text-lg text-white">WAFFLE <span class="text-gold-gradient">ORBIT</span></h3>
+              <p class="text-[10px] font-bold text-amber-400 uppercase tracking-widest">Orbit of Taste... Beyond the Usual!</p>
+            </div>
+          </div>
+
+          <p class="text-xs text-stone-400 leading-relaxed">
+            Sankarankovil's premier destination for artisanal Belgian waffles, sealed UFO burgers, stone-baked rectangle pizzas, crispy broasted chicken, and thick milkshakes.
+          </p>
+
+          <div class="flex items-center gap-2">
+            <span class="badge-halal-luxury">100% Halal Food</span>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-white/5 border border-white/10 text-stone-300">Fresh Made to Order</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-heading font-black text-sm text-white uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-2 text-xs font-semibold">
+            <li><a href="#section-home" class="hover:text-amber-300" data-i18n="nav_home">Home</a></li>
+            <li><a href="#section-about" class="hover:text-amber-300" data-i18n="nav_about">About Us</a></li>
+            <li><a href="#section-menu" class="hover:text-amber-300" data-i18n="nav_menu">Menu (50+ Items)</a></li>
+            <li><a href="#section-offers" class="hover:text-amber-300 text-amber-400" data-i18n="nav_offers">Deals & Offers</a></li>
+            <li><a href="#section-reels" class="hover:text-amber-300">Trending Reels</a></li>
+            <li><a href="#section-gallery" class="hover:text-amber-300" data-i18n="nav_gallery">Photo Gallery</a></li>
+            <li><a href="#section-contact" class="hover:text-amber-300" data-i18n="nav_contact">Visit Us / Map</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Items -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-heading font-black text-sm text-white uppercase tracking-wider">Popular Delicacies</h4>
+          <ul class="space-y-2 text-xs text-stone-300">
+            <li>• Charcoal Noir Gelato Waffle (₹180)</li>
+            <li>• Nutella Roasted Hazelnut (₹190)</li>
+            <li>• Chicken UFO Burger (₹150)</li>
+            <li>• Paneer Tikka Rectangle Pizza (₹240)</li>
+            <li>• Crispy Broast Chicken Bucket (₹299)</li>
+            <li>• Blue Lagoon Cosmic Cooler (₹110)</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Visit, Contact & Official Delivery -->
+        <div class="lg:col-span-3 space-y-3.5">
+          <h4 class="font-heading font-black text-sm text-white uppercase tracking-wider">Visit & Contact</h4>
+          <p class="leading-relaxed">
+            18, Sowdrapandiya, Vinayagar Kovil St, Kalugumalai Rd, Sankarankovil 627756
+            <br><strong class="text-amber-400 text-[11px]">(Refresh Super Market West Side)</strong>
+          </p>
+          <p class="text-white font-bold">10:00 AM – 10:00 PM (Everyday)</p>
+          <p>
+            <a href="tel:+919600875941" class="text-amber-300 font-black text-sm hover:underline">
+              +91 96008 75941 / 97518 66187
+            </a>
+          </p>
+
+          <!-- Social Redirect Icons in Col 4 -->
+          <div class="pt-1 flex flex-wrap items-center gap-2">
+            <a 
+              href="https://www.instagram.com/waffleorbit25?exln=cm54Nm1zcmt2ZHpk" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-icon-btn-sm instagram"
+              title="Instagram: @waffleorbit25"
+            >
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+
+            <a 
+              href="https://wa.me/919600875941" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-icon-btn-sm whatsapp"
+              title="WhatsApp: +91 96008 75941"
+            >
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
+
+            <a 
+              href="https://www.facebook.com/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-icon-btn-sm facebook"
+              title="Facebook"
+            >
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+
+            <a 
+              href="https://www.youtube.com/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-icon-btn-sm youtube"
+              title="YouTube"
+            >
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+
+            <a 
+              href="https://maps.app.goo.gl/k3m1Wqum1mVwPpLK9" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-icon-btn-sm location"
+              title="Google Maps Location"
+            >
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 7.13 15.34 7.43 15.77a.69.69 0 0 0 1.14 0c.3-.43 7.43-10.52 7.43-15.77 0-4.42-3.58-8-8-8zm0 11.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/></svg>
+            </a>
+          </div>
+
+          <!-- PROMINENT ZOMATO DELIVERY PARTNER CARD (MAIN) -->
+          <div class="pt-2">
+            <a 
+              href="https://www.zomato.com/cs/sankarankovil/waffle-orbit-sankarankovil-locality/order"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="zomato-card flex items-center justify-between gap-3 group block"
+              title="Order on Zomato"
+            >
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-red-600 flex items-center justify-center font-black text-white text-base shadow-md">
+                  z
+                </div>
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-white font-black text-xs uppercase tracking-wider">Order Online on Zomato</span>
+                    <span class="px-1.5 py-0.2 rounded bg-emerald-600 text-white font-bold text-[9px]">4.9 ★</span>
+                  </div>
+                  <p class="text-[10px] text-stone-400 mt-0.5">Fast Doorstep Delivery in Sankarankovil</p>
+                </div>
+              </div>
+              <span class="text-red-400 font-black text-sm group-hover:translate-x-1.5 transition-transform">→</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM ATTRIBUTION: ONLY PLACE FOR ADITYA SKILL GATE -->
+      <div class="mt-12 pt-8 border-t border-[#2C180E] flex flex-col items-center justify-center text-center space-y-3.5 text-xs text-stone-500">
+        <div class="inline-flex items-center gap-2 bg-[#1A0E08] px-5 py-2.5 rounded-full border border-amber-500/40 shadow-lg shadow-black">
+          <i data-lucide="code-2" class="w-4 h-4 text-amber-400"></i>
+          <span class="text-stone-300">Designed & Developed by</span>
+          <a 
+            href="https://adityaskillgate.com/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="font-black text-amber-300 hover:text-amber-200 hover:underline flex items-center gap-1.5"
+          >
+            <span>Aditya Skill Gate IT Solution</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <p>© 2026 WAFFLE ORBIT, Sankarankovil. All rights reserved. • Kalugumalai Road (Refresh Super Market West Side)</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
